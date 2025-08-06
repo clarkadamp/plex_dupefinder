@@ -24,11 +24,7 @@ from plexapi.server import PlexServer
 ############################################################
 
 # Setup logger
-log_filename = os.path.join(
-    os.path.dirname(os.path.realpath(sys.argv[0])), "activity.log"
-)
 logging.basicConfig(
-    filename=log_filename,
     level=logging.DEBUG,
     format="[%(asctime)s] %(levelname)s - %(message)s",
     datefmt="%H:%M:%S",

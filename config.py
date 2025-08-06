@@ -8,9 +8,7 @@ from getpass import getpass
 
 from plexapi.myplex import MyPlexAccount
 
-config_path = os.path.join(
-    os.path.dirname(os.path.realpath(sys.argv[0])), "config.json"
-)
+config_path = sys.argv[1]
 base_config = {
     "PLEX_SERVER": "https://plex.your-server.com",
     "PLEX_TOKEN": "",
